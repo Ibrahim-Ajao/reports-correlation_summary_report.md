@@ -48,7 +48,7 @@ Detect any interaction between internal hosts and known malicious infrastructure
 - **Name:** IOC Match Detected
 - **Trigger:** Result count > 0
 - **Schedule:** Every 5 minutes
-- **Action:** Log event (can be extended to email)
+- **Action:** Log event and Email nofication
 
 ---
 
