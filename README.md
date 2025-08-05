@@ -14,7 +14,7 @@ Detect any interaction between internal hosts and known malicious infrastructure
 
 ##  Threat Intelligence Source
 
-- **File:** `threat_intel.csv`
+- **File:** threat_intel.csv
 - **Sources:** AlienVault OTX
 - **IOCs Included:**
   - Malicious IPs
@@ -27,7 +27,7 @@ Detect any interaction between internal hosts and known malicious infrastructure
 
 1. **IOC Feed Ingested** into Splunk as a CSV Lookup Table
 2. **Sysmon Logs Queried** for process executions and network connections
-3. **Lookups Performed** using Splunk’s `lookup` command
+3. **Lookups Performed** using Splunk’s lookup command
 4. **IOC Matches** isolated and visualized
 5. **Alerts Created** for real-time detection of matches
 
@@ -37,9 +37,9 @@ Detect any interaction between internal hosts and known malicious infrastructure
 
 | IOC                   | Type       | Log Source | Match Found | Action |
 |------------------------|------------|-------------|--------------|--------|
-| 203.0.113.44           | IP Address | EventCode=3 | ✅ Yes         | Blocked |
-| secure-paypal-update.com | Domain     | EventCode=1 | ✅ Yes         | Alert Triggered |
-| eicar.com              | URL        | EventCode=1 | ✅ Yes         | Logged |
+| 203.0.113.44           | IP Address | EventCode=3 |  Yes         | Blocked |
+| secure-paypal-update.com | Domain     | EventCode=1 |  Yes         | Alert Triggered |
+| eicar.com              | URL        | EventCode=1 |  Yes         | Logged |
 
 ---
 
