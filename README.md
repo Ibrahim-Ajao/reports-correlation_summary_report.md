@@ -1,27 +1,21 @@
 
----
 
-## 📄 `reports/correlation_summary_report.md`
-
-```markdown
-# 🕵️ Threat Intelligence Correlation Summary Report
-
-## 📌 Overview
+##  Overview
 
 This report summarizes the correlation of known threat intelligence Indicators of Compromise (IOCs) against endpoint activity logs using Splunk and Sysmon.
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 Detect any interaction between internal hosts and known malicious infrastructure based on external threat intelligence feeds.
 
 ---
 
-## 🔗 Threat Intelligence Source
+##  Threat Intelligence Source
 
 - **File:** `threat_intel.csv`
-- **Sources:** AlienVault OTX, AbuseIPDB, URLhaus
+- **Sources:** AlienVault OTX
 - **IOCs Included:**
   - Malicious IPs
   - Phishing domains
@@ -29,7 +23,7 @@ Detect any interaction between internal hosts and known malicious infrastructure
 
 ---
 
-## 🧪 Methodology
+##  Methodology
 
 1. **IOC Feed Ingested** into Splunk as a CSV Lookup Table
 2. **Sysmon Logs Queried** for process executions and network connections
@@ -39,7 +33,7 @@ Detect any interaction between internal hosts and known malicious infrastructure
 
 ---
 
-## 📈 Detection Summary
+##  Detection Summary
 
 | IOC                   | Type       | Log Source | Match Found | Action |
 |------------------------|------------|-------------|--------------|--------|
@@ -49,7 +43,7 @@ Detect any interaction between internal hosts and known malicious infrastructure
 
 ---
 
-## 🚨 Alert Configurations
+##  Alert Configurations
 
 - **Name:** IOC Match Detected
 - **Trigger:** Result count > 0
@@ -58,7 +52,7 @@ Detect any interaction between internal hosts and known malicious infrastructure
 
 ---
 
-## 📊 Dashboard Created
+##  Dashboard Created
 
 Panels included:
 - Top IOCs Detected
@@ -67,7 +61,7 @@ Panels included:
 
 ---
 
-## 🛡️ Recommendations
+##  Recommendations
 
 - Integrate regular IOC feed updates using scheduled scripts
 - Expand lookup fields to include hash values (MD5, SHA256)
@@ -76,10 +70,4 @@ Panels included:
 
 ---
 
-## 👤 Analyst
-
-**Name:** Ajao Ibrahim Adewale  
-**Role:** SOC Analyst Trainee  
-**Certification:** Google Cybersecurity Professional Certificate  
-**Date:** July 2025
 
